@@ -1,0 +1,19 @@
+Question: In what year was the University of Ghana founded, and how many years ago was that from 2026?
+Model: groq/openai/gpt-oss-20b
+
+--- Step 1 ---
+Thought: Need to find the founding year of the University of Ghana.  
+Action: wiki_lookup  
+Action Input: University of Ghana
+Observation: The University of Ghana is a public university located in Accra, Ghana. It is the oldest public university in the country. The university was founded in 1948 as the University College of the Gold Coast in the British colony of the Gold Coast. It was originally an affiliate college of the University of London, which supervised its academic programs and awarded degrees. After Ghana gained independence in 1957, the college was renamed the University College of Ghana. It changed it name again to the University of Ghana in 1961, when it gained full university status. The University of Ghana is situated on the west side of the Accra Legon Hills and northeast of the center of Accra. It has over 60,000 registered students.
+--- Step 2 ---
+Thought: [no written reasoning: the model made a native function call, converted to text] Use the calculator tool with input: 2026-1948
+Action: calculator
+Action Input: 2026-1948
+Observation: 78
+--- Step 3 ---
+Thought: The University of Ghana was founded in 1948, which was 78 years ago from 2026.  
+Action: finish  
+Action Input: The University of Ghana was founded in 1948, which was 78 years ago from 2026.
+
+Final answer: The University of Ghana was founded in 1948, which was 78 years ago from 2026.

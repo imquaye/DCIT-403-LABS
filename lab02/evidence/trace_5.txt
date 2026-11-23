@@ -1,0 +1,9 @@
+Question: Hello! Can you help me today?
+Model: groq/openai/gpt-oss-20b
+
+--- Step 1 ---
+Thought: The user greeted and asked if I can help. No factual or arithmetic question. I can respond directly.  
+Action: finish  
+Action Input: Hello! Absolutely, I'm here to help. What do you need assistance with today?
+
+Final answer: Hello! Absolutely, I'm here to help. What do you need assistance with today?
