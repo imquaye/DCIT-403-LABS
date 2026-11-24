@@ -71,6 +71,36 @@ class AgentTests(unittest.TestCase):
             self.assertIn(entry, trace)
         self.assertEqual(trace.count("Observation: 175"), 1)
 
+    def test_trace_1_calculator_syntax_error_recovery(self):
+        question = (
+            "I have GHS 1,200. I want 4 bags of rice at GHS 185 each and 3 gallons "
+            "of oil at GHS 95 each. How much will I have left?"
+        )
+        malformed = "4*185 + 3*95 1200 - (4*185 + 3*95)"
+        corrected = "1200 - (4*185 + 3*95)"
+        expected_answer = "You will have GHS 175 left."
+        replies = [
+            reply("calculator", malformed),
+            reply("calculator", corrected),
+            reply("finish", expected_answer),
+        ]
+
+        with patch.object(agent, "call_model", side_effect=replies), contextlib.redirect_stdout(io.StringIO()):
+            answer, trace = agent.run_agent(question)
+
+        self.assertEqual(answer, expected_answer)
+        self.assertRegex(
+            trace,
+            rf"Action: calculator\nAction Input: {re.escape(malformed)}\n"
+            r"Observation: Error: invalid syntax[^\n]*\n--- Step 2 ---\n",
+        )
+        self.assertIn(
+            f"Action: calculator\nAction Input: {corrected}\n"
+            "Observation: 175\n--- Step 3 ---\n",
+            trace,
+        )
+        self.assertTrue(trace.endswith(f"\nFinal answer: {expected_answer}"))
+
     def test_native_call_recovery(self):
         error = LITELLM.BadRequestError(json.dumps({"error": {
             "code": "tool_use_failed",
