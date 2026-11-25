@@ -1,0 +1,4 @@
+# Student-selected sample set, drafted by Codex at the student's request. These are sample questions for practice.
+In one sentence, explain what makes a software system an intelligent agent.
+For a campus information chatbot, give one example of a sensor and one example of an actuator in a single sentence.
+In one sentence, explain why a chatbot that uses earlier turns operates in a sequential environment.
