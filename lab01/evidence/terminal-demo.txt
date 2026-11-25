@@ -1,0 +1,29 @@
+Campus Info Bot | Fictional department | Type quit to exit.
+You: Bot: To obtain an enrolment confirmation letter, email the Department of Computing office at **computing-office@example.org**.  
+In your email, include:
+
+1. Your student ID  
+2. Your programme name  
+
+The office will prepare the letter and it is normally ready within **three working days**.
+You: 
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm.turn_on_debug()'.
+
+Bot: Model call failed (RateLimitError). Please try again.
+You: 
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm.turn_on_debug()'.
+
+Bot: Model call failed (RateLimitError). Please try again.
+You: 
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm.turn_on_debug()'.
+
+Bot: Model call failed (RateLimitError). Please try again.
+You: 
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+LiteLLM.Info: If you need to debug this error, use `litellm.turn_on_debug()'.
+
+Bot: Model call failed (RateLimitError). Please try again.
+You: Goodbye.

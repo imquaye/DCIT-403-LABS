@@ -27,3 +27,12 @@ https://github.com/imquaye/DCIT-403-LABS
 AI tools were used to support understanding, debugging, code review and testing. The experimental results reported for Lab 2 came from the actual baseline and ReAct runs, while the subsequent regression tests used mocked model responses.
 
 The original experimental evidence was preserved. AI assistance and the collaborative nature of the initial implementation have been disclosed in this log.
+
+
+## Lab 1 – AI-Use Log
+
+| Date | Lab | Tool | What I asked | What I used | What I changed or checked |
+|---|---|---|---|---|---|
+| 24–25 Nov 2026 | Lab 1 | OpenAI Codex | Code assistance, debugging and testing. | Python implementation and diagnostic support. | Functional and offline tests. |
+| 24–25 Nov 2026 | Lab 1 | Groq | LLM inference and temperature experiments. | Model responses and token usage. | Experimental outputs and results. |
+| 24–25 Nov 2026 | Lab 1 | ChatGPT | Technical review and verification. | Code review feedback. | Evidence and test results. |

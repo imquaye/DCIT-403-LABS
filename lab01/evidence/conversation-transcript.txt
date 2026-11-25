@@ -1,0 +1,28 @@
+Campus Info Bot | Fictional department
+Live run from conversation-x6yqqa9t.jsonl
+
+You: I'm interested in getting an enrolment confirmation letter.
+Bot: To obtain an enrolment confirmation letter, email the Department of Computing office at **computing-office@example.org**.  
+In your email, include:
+
+1. Your student ID  
+2. Your programme name  
+
+The office will prepare the letter and it is normally ready within **three working days**.
+
+You: Where is the office?
+Bot: The Department of Computing office is located in **Room B204 on the second floor of the Cedar Academic Building**.
+
+You: What hours can I visit?
+Bot: You can visit the office Monday through Friday between **9:00 a.m. and 4:00 p.m.**
+
+You: What's the email address?
+Bot: The office email address is **computing-office@example.org**.
+
+You: For the document I mentioned at the start, what should I include and how long does it take?
+Bot: For an enrolment confirmation letter, you must email the Department of Computing office with:
+
+- Your **student ID**  
+- Your **programme name**
+
+Once the office receives this information, the letter is normally ready within **three working days**.
